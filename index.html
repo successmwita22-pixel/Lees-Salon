@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lees Salon</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="logo">
+        <span>Lees</span>
+        <div>
+            <small>BEAUTY SALON</small>
+        </div>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#booking">Book</a>
+        <a href="#appointments">My Appointments</a>
+        <a href="#owner">Owner</a>
+    </nav>
+
+    <button class="mobile-menu" id="mobileMenu">☰</button>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <span class="eyebrow">YOUR BEAUTY. YOUR STYLE.</span>
+
+        <h1>
+            Book your perfect
+            <span>salon experience.</span>
+        </h1>
+
+        <p>
+            Choose your service, upload the design you love,
+            select an available appointment and let our salon
+            confirm whether we can bring your desired look to life.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#booking" class="btn btn-primary">
+                Book Appointment
+            </a>
+
+            <a href="#services" class="btn btn-secondary">
+                View Services
+            </a>
+        </div>
+
+        <div class="hero-info">
+            <div>
+                <strong>✓</strong>
+                <span>Easy Booking</span>
+            </div>
+
+            <div>
+                <strong>✓</strong>
+                <span>Design Upload</span>
+            </div>
+
+            <div>
+                <strong>✓</strong>
+                <span>Owner Confirmation</span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="hero-card">
+
+        <div class="availability-card">
+
+            <div class="card-heading">
+                <div>
+                    <small>APPOINTMENT</small>
+                    <h3>Check Availability</h3>
+                </div>
+
+                <span class="calendar-icon">◷</span>
+            </div>
+
+            <div class="mini-calendar">
+
+                <div class="calendar-top">
+                    <strong>September 2026</strong>
+                    <span>›</span>
+                </div>
+
+                <div class="weekdays">
+                    <span>S</span>
+                    <span>M</span>
+                    <span>T</span>
+                    <span>W</span>
+                    <span>T</span>
+                    <span>F</span>
+                    <span>S</span>
+                </div>
+
+                <div class="calendar-days">
+
+                    <span class="empty"></span>
+                    <span class="empty"></span>
+                    <span>1</span>
+                    <span>2</span>
+                    <span class="available">3</span>
+                    <span class="available">4</span>
+                    <span>5</span>
+
+                    <span>6</span>
+                    <span class="available">7</span>
+                    <span class="partial">8</span>
+                    <span class="available">9</span>
+                    <span class="full">10</span>
+                    <span class="available">11</span>
+                    <span class="available selected">12</span>
+
+                </div>
+
+            </div>
+
+            <div class="availability-key">
+
+                <div>
+                    <i class="green"></i>
+                    Available
+                </div>
+
+                <div>
+                    <i class="yellow"></i>
+                    Almost full
+                </div>
+
+                <div>
+                    <i class="red"></i>
+                    Fully booked
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section class="section" id="services">
+
+    <div class="section-heading">
+
+        <span class="eyebrow">OUR SERVICES</span>
+
+        <h2>Choose your beauty service</h2>
+
+        <p>
+            Select the service you want and continue to
+            check available appointment times.
+        </p>
+
+    </div>
+
+
+    <div class="services-grid">
+
+        <div class="service-card">
+
+            <div class="service-image hair-image">
+                <span>✦</span>
+            </div>
+
+            <div class="service-content">
+
+                <span class="service-category">HAIR</span>
+
+                <h3>Braiding</h3>
+
+                <p>
+                    Beautiful protective styles and
+                    creative braiding designs.
+                </p>
+
+                <div class="service-bottom">
+
+                    <strong>MWK 25,000+</strong>
+
+                    <button
+                        class="service-select"
+                        data-service="Braiding"
+                        data-price="25000">
+                        Select
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-image nails-image">
+                <span>♡</span>
+            </div>
+
+            <div class="service-content">
+
+                <span class="service-category">NAILS</span>
+
+                <h3>Nail Design</h3>
+
+                <p>
+                    Manicures, extensions and custom
+                    nail designs.
+                </p>
+
+                <div class="service-bottom">
+
+                    <strong>MWK 15,000+</strong>
+
+                    <button
+                        class="service-select"
+                        data-service="Nail Design"
+                        data-price="15000">
+                        Select
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-image makeup-image">
+                <span>✧</span>
+            </div>
+
+            <div class="service-content">
+
+                <span class="service-category">MAKEUP</span>
+
+                <h3>Makeup</h3>
+
+                <p>
+                    Professional makeup for events,
+                    weddings and special occasions.
+                </p>
+
+                <div class="service-bottom">
+
+                    <strong>MWK 20,000+</strong>
+
+                    <button
+                        class="service-select"
+                        data-service="Makeup"
+                        data-price="20000">
+                        Select
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-image haircut-image">
+                <span>✂</span>
+            </div>
+
+            <div class="service-content">
+
+                <span class="service-category">HAIR</span>
+
+                <h3>Hair Styling</h3>
+
+                <p>
+                    Haircuts, styling and custom
+                    looks for every occasion.
+                </p>
+
+                <div class="service-bottom">
+
+                    <strong>MWK 18,000+</strong>
+
+                    <button
+                        class="service-select"
+                        data-service="Hair Styling"
+                        data-price="18000">
+                        Select
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= BOOKING ================= -->
+
+<section class="booking-section" id="booking">
+
+    <div class="section-heading">
+
+        <span class="eyebrow">BOOK AN APPOINTMENT</span>
+
+        <h2>Tell us what you want</h2>
+
+        <p>
+            Upload your inspiration design so our salon
+            team can review whether we can provide the look.
+        </p>
+
+    </div>
+
+
+    <div class="booking-container">
+
+
+        <!-- LEFT SIDE -->
+
+        <div class="booking-form">
+
+            <div class="form-section">
+
+                <h3>1. Select your service</h3>
+
+                <label>Service</label>
+
+                <select id="service">
+
+                    <option value="">
+                        Select a service
+                    </option>
+
+                    <option value="Braiding">
+                        Braiding — MWK 25,000
+                    </option>
+
+                    <option value="Nail Design">
+                        Nail Design — MWK 15,000
+                    </option>
+
+                    <option value="Makeup">
+                        Makeup — MWK 20,000
+                    </option>
+
+                    <option value="Hair Styling">
+                        Hair Styling — MWK 18,000
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-section">
+
+                <h3>2. Choose date & time</h3>
+
+                <label>Appointment date</label>
+
+                <input
+                    type="date"
+                    id="appointmentDate"
+                    min="2026-09-01">
+
+                <div class="selected-date-status" id="dateStatus">
+                    Select a date to see availability.
+                </div>
+
+
+                <label class="time-label">
+                    Available time
+                </label>
+
+                <div class="time-slots" id="timeSlots">
+
+                    <button data-time="09:00">
+                        09:00 AM
+                    </button>
+
+                    <button data-time="10:00">
+                        10:00 AM
+                    </button>
+
+                    <button data-time="11:00">
+                        11:00 AM
+                    </button>
+
+                    <button data-time="13:00">
+                        01:00 PM
+                    </button>
+
+                    <button data-time="14:00">
+                        02:00 PM
+                    </button>
+
+                    <button data-time="15:00">
+                        03:00 PM
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-section">
+
+                <h3>3. Upload your design</h3>
+
+                <p class="form-help">
+                    Upload an image showing the hairstyle,
+                    nails or makeup look you want.
+                </p>
+
+                <label class="upload-box" for="designUpload">
+
+                    <div class="upload-icon">
+                        ↑
+                    </div>
+
+                    <strong>Upload design image</strong>
+
+                    <span>
+                        PNG, JPG or JPEG
+                    </span>
+
+                    <input
+                        type="file"
+                        id="designUpload"
+                        accept="image/png,image/jpeg">
+
+                </label>
+
+
+                <div
+                    class="image-preview"
+                    id="imagePreview">
+
+                </div>
+
+            </div>
+
+
+            <div class="form-section">
+
+                <h3>4. Your information</h3>
+
+                <div class="form-grid">
+
+                    <div>
+                        <label>Full name</label>
+
+                        <input
+                            type="text"
+                            id="customerName"
+                            placeholder="Your name">
+                    </div>
+
+
+                    <div>
+                        <label>Phone number</label>
+
+                        <input
+                            type="tel"
+                            id="customerPhone"
+                            placeholder="+265 ...">
+                    </div>
+
+                </div>
+
+
+                <label>Email address</label>
+
+                <input
+                    type="email"
+                    id="customerEmail"
+                    placeholder="you@example.com">
+
+
+                <label>Additional instructions</label>
+
+                <textarea
+                    id="customerNote"
+                    placeholder="Tell us anything important about your appointment...">
+                </textarea>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+
+        <aside class="booking-summary">
+
+            <div class="summary-header">
+
+                <span>BOOKING SUMMARY</span>
+
+                <div class="summary-icon">
+                    ✓
+                </div>
+
+            </div>
+
+
+            <div class="summary-row">
+
+                <span>Service</span>
+
+                <strong id="summaryService">
+                    Not selected
+                </strong>
+
+            </div>
+
+
+            <div class="summary-row">
+
+                <span>Date</span>
+
+                <strong id="summaryDate">
+                    Not selected
+                </strong>
+
+            </div>
+
+
+            <div class="summary-row">
+
+                <span>Time</span>
+
+                <strong id="summaryTime">
+                    Not selected
+                </strong>
+
+            </div>
+
+
+            <div class="summary-row">
+
+                <span>Service price</span>
+
+                <strong id="summaryPrice">
+                    MWK 0
+                </strong>
+
+            </div>
+
+
+            <div class="summary-total">
+
+                <span>Deposit required</span>
+
+                <strong id="summaryDeposit">
+                    MWK 0
+                </strong>
+
+            </div>
+
+
+            <div class="payment-info">
+
+                <strong>How it works</strong>
+
+                <ol>
+                    <li>Choose your service and date.</li>
+                    <li>Upload your desired design.</li>
+                    <li>Pay the required deposit.</li>
+                    <li>Our owner reviews your request.</li>
+                    <li>Receive confirmation or feedback.</li>
+                </ol>
+
+            </div>
+
+
+            <button
+                class="btn btn-primary booking-submit"
+                id="submitBooking">
+
+                Continue to Payment
+
+            </button>
+
+
+            <p class="secure-payment">
+                🔒 Secure payment process
+            </p>
+
+        </aside>
+
+    </div>
+
+</section>
+
+
+<!-- ================= APPOINTMENTS ================= -->
+
+<section class="section appointments-section" id="appointments">
+
+    <div class="section-heading">
+
+        <span class="eyebrow">MY APPOINTMENTS</span>
+
+        <h2>Track your booking</h2>
+
+        <p>
+            See whether the salon has approved your appointment.
+        </p>
+
+    </div>
+
+
+    <div id="appointmentList" class="appointment-list">
+
+        <div class="empty-appointments">
+
+            <div>📅</div>
+
+            <h3>No appointments yet</h3>
+
+            <p>
+                Your bookings will appear here.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= OWNER DASHBOARD ================= -->
+
+<section class="owner-section" id="owner">
+
+    <div class="section-heading">
+
+        <span class="eyebrow">SALON OWNER</span>
+
+        <h2>Manage appointments</h2>
+
+        <p>
+            Review customer requests and decide whether
+            the salon can provide the requested service.
+        </p>
+
+    </div>
+
+
+    <div class="owner-dashboard">
+
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+                <span>Total Bookings</span>
+                <strong id="totalBookings">0</strong>
+            </div>
+
+            <div class="stat-card">
+                <span>Pending Requests</span>
+                <strong id="pendingBookings">0</strong>
+            </div>
+
+            <div class="stat-card">
+                <span>Confirmed</span>
+                <strong id="confirmedBookings">0</strong>
+            </div>
+
+            <div class="stat-card">
+                <span>Revenue</span>
+                <strong id="revenue">MWK 0</strong>
+            </div>
+
+        </div>
+
+
+        <div class="owner-requests">
+
+            <div class="owner-title">
+
+                <div>
+                    <span class="eyebrow">
+                        REQUESTS
+                    </span>
+
+                    <h3>Customer appointments</h3>
+                </div>
+
+                <button
+                    class="btn btn-secondary"
+                    id="refreshOwner">
+                    Refresh
+                </button>
+
+            </div>
+
+
+            <div id="ownerBookings">
+
+                <div class="empty-appointments">
+
+                    <div>📋</div>
+
+                    <h3>No booking requests</h3>
+
+                    <p>
+                        New customer requests will appear here.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PAYMENT MODAL ================= -->
+
+<div class="modal" id="paymentModal">
+
+    <div class="modal-content">
+
+        <button
+            class="modal-close"
+            id="closePayment">
+            ×
+        </button>
+
+        <div class="modal-icon">
+            💳
+        </div>
+
+        <h2>Complete Payment</h2>
+
+        <p>
+            Pay the required deposit to submit your
+            appointment request to the salon.
+        </p>
+
+
+        <div class="payment-summary">
+
+            <span>Amount to pay</span>
+
+            <strong id="paymentAmount">
+                MWK 0
+            </strong>
+
+        </div>
+
+
+        <label>Payment method</label>
+
+        <select id="paymentMethod">
+
+            <option value="Mobile Money">
+                Mobile Money
+            </option>
+
+            <option value="Bank Card">
+                Bank Card
+            </option>
+
+        </select>
+
+
+        <label>Payment reference</label>
+
+        <input
+            type="text"
+            id="paymentReference"
+            placeholder="e.g. TXN12345">
+
+
+        <button
+            class="btn btn-primary full-width"
+            id="completePayment">
+
+            Pay & Submit Request
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- ================= FEEDBACK MODAL ================= -->
+
+<div class="modal" id="feedbackModal">
+
+    <div class="modal-content">
+
+        <button
+            class="modal-close"
+            id="closeFeedback">
+            ×
+        </button>
+
+        <div class="modal-icon">
+            💬
+        </div>
+
+        <h2>Salon Response</h2>
+
+        <div id="feedbackContent"></div>
+
+        <button
+            class="btn btn-primary full-width"
+            id="closeFeedbackButton">
+
+            Done
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+<footer>
+
+    <div class="footer-logo">
+        Glow & Grace
+    </div>
+
+    <p>
+        Your beauty. Your style. Your appointment.
+    </p>
+
+    <small>
+        © 2026 Glow & Grace Salon. All rights reserved.
+    </small>
+
+</footer>
+
+
+</body>
+</html>
